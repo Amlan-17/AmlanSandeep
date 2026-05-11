@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #222;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .home {
+            height: 90vh;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .home-content h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .home-content p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .home-content button {
+            padding: 12px 25px;
+            border: none;
+            background-color: #222;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .about {
+            padding: 60px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            width: 70%;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .products {
+            padding: 60px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+        }
+
+        .card button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #222;
+            color: white;
+            cursor: pointer;
+        }
+
+        .feedback {
+            padding: 60px;
+            text-align: center;
+        }
+
+        .feedback h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .feedback-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .feedback-card {
+            width: 350px;
+            background-color: #f1f1f1;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .feedback-card p {
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">ShopEasy</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Welcome to ShopEasy</h1>
+            <p>Your one-stop destination for amazing products.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <p>
+            We provide high-quality products at affordable prices.
+            Our goal is to deliver the best shopping experience to our customers.
+        </p>
+    </section>
+
+    <section class="products">
+        <h2>Our Products</h2>
+
+        <div class="product-container">
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPMpK2Xq2tjnRV5YluXFBk_jewxVG0yQYfDq3C-TjpZg&s" alt="Product">
+                <h3>Product 1</h3>
+                <p>₹999</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyQNDjm-o6i1fixkE0E5N4qbDIeTI0HwUeRQ&s" alt="Product">
+                <h3>Product 2</h3>
+                <p>₹1499</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="card">
+                <img src="https://www.lagirlusa.com/cdn/shop/files/GC969_prod_img_1.jpg?v=1699772999&width=1024" alt="Product">
+                <h3>Product 3</h3>
+                <p>₹1999</p>
+                <button>Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="feedback">
+        <h2>Customer Feedback</h2>
+
+        <div class="feedback-container">
+
+            <div class="feedback-card">
+                <p>"Amazing quality products and fast delivery!"</p>
+                <h4>- Rahul</h4>
+            </div>
+
+            <div class="feedback-card">
+                <p>"Very clean website and easy shopping experience."</p>
+                <h4>- Priya</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>2026 ShopEasy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
